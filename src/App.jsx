@@ -3,6 +3,7 @@ import { useState } from 'react'
 import './App.css';
 import Modal from './components/Modal/Modal';
 import { v4 as uuidv4 } from 'uuid';
+import close from './assets/close.svg'
 
 function App() {
   const [showModal, setShowModal] = useState(false);
@@ -114,7 +115,7 @@ function App() {
                   <p>{ele.body}</p>
                   </div>
                   <button type='button' className='listDelete' onClick={()=>handleDelete(ele)}>
-                    <img src='src/assets/close.svg' alt='close'/>
+                    <img src={close} alt='close'/>
                   </button>
                 </li>
               )
