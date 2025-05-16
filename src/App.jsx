@@ -61,7 +61,7 @@ function App() {
       setList(result)
     }
     else {
-      setList([...list, formData])
+      setList([formData, ...list])
     }
     setName('');
     setBody('');
@@ -113,7 +113,9 @@ function App() {
                   <h3>{ele.name}</h3>
                   <p>{ele.body}</p>
                   </div>
-                  <button type='button' className='listDelete' onClick={()=>handleDelete(ele)}>X</button>
+                  <button type='button' className='listDelete' onClick={()=>handleDelete(ele)}>
+                    <img src='src/assets/close.svg' alt='close'/>
+                  </button>
                 </li>
               )
             })

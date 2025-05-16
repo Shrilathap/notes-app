@@ -81,12 +81,16 @@ textarea:not(:placeholder-shown) + label {
 }
 
 .cardContainer {
-  max-height: calc(100vh - 60px);
+  max-height: calc(100vh - 185px);
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1.6rem; 
   margin-top: 2rem;
   padding: 0;
+  overflow-y: auto;
+  @media (max-width:992px) {
+    max-height: calc(100vh - 250px);
+  }
 }
 
 .cardList {
@@ -124,4 +128,9 @@ p {
   color: red;
   font-size: 1.2rem;
   margin-top: 4px;
+}
+
+img {
+      width: 20px;
+    height: 20px;
 }

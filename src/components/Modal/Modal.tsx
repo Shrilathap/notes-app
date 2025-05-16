@@ -13,7 +13,9 @@ const Modal = ({ isOpen, onClose, children }:ModalProps) => {
   return (
     <div className="custom-modal-overlay">
       <div className="custom-modal">
-        <button className="custom-close-button" onClick={onClose}>x</button>
+        <button className="custom-close-button" onClick={onClose}>
+            <img src='src/assets/close.svg' alt='close'/>
+        </button>
         <div className="custom-modal-content">{children}</div>
       </div>
     </div>

@@ -2,7 +2,7 @@
   font-family: "Inter";
   line-height: 1.5;
   font-weight: 400;
-
+  color-scheme: dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #3A0519;
 
@@ -11,8 +11,9 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 10px;
-
 }
+
+
 
 a {
   font-weight: 500;
@@ -47,6 +48,7 @@ button {
   font-family: inherit;
   background: linear-gradient(90deg, #670D2F, #EF88AD);
   cursor: pointer;
+  color: #fff;
 }
 
 button::after {
