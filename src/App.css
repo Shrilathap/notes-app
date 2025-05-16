@@ -91,6 +91,9 @@ textarea:not(:placeholder-shown) + label {
   @media (max-width:992px) {
     max-height: calc(100vh - 250px);
   }
+  @supports(max-width: 992px) {
+    max-height: calc(100vh - 250px);
+  }
 }
 
 .cardList {
