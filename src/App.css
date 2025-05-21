@@ -14,9 +14,14 @@
 }
 
 .container {
-  width: calc(100vw - 60px);
+  width: calc(100vw - 65px);
   height: calc(100vh - 40px);
   padding: 2rem 3rem;
+  overflow-x: hidden;
+  
+   @media (max-width:992px) {
+    height:auto;
+  }
 }
 
 
@@ -81,26 +86,18 @@ textarea:not(:placeholder-shown) + label {
 }
 
 .cardContainer {
-  max-height: calc(100vh - 185px);
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1.6rem; 
-  margin-top: 2rem;
+  margin: 2rem 0;
   padding: 0;
-  overflow-y: auto;
-  @media (max-width:992px) {
-    max-height: calc(100vh - 250px);
-  }
-  @supports(max-width: 992px) {
-    max-height: calc(100vh - 250px);
-  }
 }
 
 .cardList {
   list-style: none;
   min-height: 120px;
   background-color: #A53860;
-  box-shadow: 0 7px 10px 3px rgba(0, 0, 0, 0.3);
+  /* box-shadow: 0 7px 10px 3px rgba(0, 0, 0, 0.3); */
   border-radius: 20px;
   padding: 2rem;
   cursor: pointer;
@@ -111,6 +108,7 @@ h3 {
   font-size: 1.8rem;
   font-weight: 600;
   margin-top: 0;
+  word-break: break-word;
 }
 
 p {
